@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoinVAT Logo - Professional</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 40px;
+            background: #f7f8fa;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+        }
+        
+        .logo-showcase {
+            background: white;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 2px 16px rgba(0,0,0,0.04);
+            text-align: center;
+        }
+        
+        .logo {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 30px;
+            vertical-align: middle;
+        }
+        
+        /* Coinbase-style circular icon */
+        .icon {
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, #1652F0 0%, #9000ff 100%);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            vertical-align: middle;
+        }
+        
+        .icon-symbol {
+            color: white;
+            font-size: 24px;
+            font-weight: 600;
+            vertical-align: middle;
+            font-family: 'SF Pro Display', -apple-system, sans-serif;
+        }
+        
+        /* Clean typography like Coinbase */
+        .text {
+            display: flex;
+            align-items: center;
+            gap: 2px;
+        }
+        
+        .coin {
+            font-size: 32px;
+            font-weight: 600;
+            color: #0A0B0D;
+            letter-spacing: -0.02em;
+            line-height: 1;
+            vertical-align: middle;
+        }
+        
+        .vat {
+            font-size: 32px;
+            font-weight: 400;
+            color: #5B636E;
+            letter-spacing: -0.02em;
+            line-height: 1;
+            vertical-align: middle;
+        }
+        
+        /* Different size variations */
+        .size-large .logo {
+            gap: 20px;
+        }
+        
+        .size-large .icon {
+            width: 64px;
+            height: 64px;
+            border-radius: 16px;
+        }
+        
+        .size-large .icon-symbol {
+            font-size: 32px;
+        }
+        
+        .size-large .coin,
+        .size-large .vat {
+            font-size: 42px;
+        }
+        
+        .size-small .icon {
+            width: 32px;
+            height: 32px;
+            border-radius: 8px;
+        }
+        
+        .size-small .icon-symbol {
+            font-size: 16px;
+        }
+        
+        .size-small .coin,
+        .size-small .vat {
+            font-size: 24px;
+        }
+        
+        /* Alternative color schemes */
+        .dark {
+            background: #1A1B23;
+        }
+        
+        .dark .coin {
+            color: white;
+        }
+        
+        .dark .vat {
+            color: #8A919E;
+        }
+        
+        .green .icon {
+            background: linear-gradient(135deg, #00D395 0%, #00B386 100%);
+        }
+        
+        .minimal .icon {
+            background: #F1F3F4;
+            border: 2px solid #E7EAED;
+        }
+        
+        .minimal .icon-symbol {
+            color: #1652F0;
+        }
+        
+        .version-title {
+            font-size: 12px;
+            color: #8A919E;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            width: 100%;
+            max-width: 1000px;
+        }
+        
+        /* On white background */
+        .on-white {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            border: 1px solid #E7EAED;
+        }
+        
+        /* On colored background */
+        .on-blue {
+            background: #1652F0;
+            padding: 30px;
+            border-radius: 12px;
+        }
+        
+        .on-blue .coin {
+            color: white;
+        }
+        
+        .on-blue .vat {
+            color: rgba(255,255,255,0.8);
+        }
+        
+        .on-blue .icon {
+            background: rgba(255,255,255,0.2);
+            backdrop-filter: blur(10px);
+        }
+        
+        .on-blue .icon-symbol {
+            color: white;
+        }
+        
+        /* Gradient text for Coin */
+        .gradient-coin {
+            background: linear-gradient(135deg, #1652F0 0%, #9000ff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo-showcase">
+        <div class="version-title">Primary Logo</div>
+        <div class="logo size-large">
+            <div class="icon">
+                <div class="icon-symbol">C</div>
+            </div>
+            <div class="text">
+                <span class="coin">Coin</span><span class="vat">VAT</span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="grid">
+        <div class="logo-showcase on-white">
+            <div class="version-title">Standard Size</div>
+            <div class="logo">
+                <div class="icon">
+                    <div class="icon-symbol">C</div>
+                </div>
+                <div class="text">
+                    <span class="coin">Coin</span><span class="vat">VAT</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="logo-showcase on-white">
+            <div class="version-title">Compact Version</div>
+            <div class="logo size-small">
+                <div class="icon">
+                    <div class="icon-symbol">C</div>
+                </div>
+                <div class="text">
+                    <span class="coin">Coin</span><span class="vat">VAT</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="logo-showcase on-blue">
+            <div class="version-title" style="color: rgba(255,255,255,0.8);">On Brand Background</div>
+            <div class="logo">
+                <div class="icon">
+                    <div class="icon-symbol">C</div>
+                </div>
+                <div class="text">
+                    <span class="coin">Coin</span><span class="vat">VAT</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="logo-showcase on-white green">
+            <div class="version-title">Alternative Color</div>
+            <div class="logo">
+                <div class="icon">
+                    <div class="icon-symbol">C</div>
+                </div>
+                <div class="text">
+                    <span class="coin">Coin</span><span class="vat">VAT</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="logo-showcase on-white minimal">
+            <div class="version-title">Minimal Style</div>
+            <div class="logo">
+                <div class="icon">
+                    <div class="icon-symbol">C</div>
+                </div>
+                <div class="text">
+                    <span class="coin">Coin</span><span class="vat">VAT</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="logo-showcase dark">
+            <div class="version-title" style="color: #8A919E;">Dark Mode</div>
+            <div class="logo">
+                <div class="icon">
+                    <div class="icon-symbol">C</div>
+                </div>
+                <div class="text">
+                    <span class="coin">Coin</span><span class="vat">VAT</span>
+                </div>
+            </div>
+        </div>
+        <!-- New Card: Gradient Coin Only on Dark -->
+        <div class="logo-showcase dark">
+            <div class="version-title" style="color: #8A919E;">Coin Gradient Only</div>
+            <div class="logo">
+                <div class="text">
+                    <span class="coin gradient-coin">Coin</span><span class="vat">VAT</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
